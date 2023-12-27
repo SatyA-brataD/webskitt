@@ -109,6 +109,30 @@ button.button span {
   align-items: center;
   background-color: transparent;
 }
+.slider-btn-container{display: none;}
+.slider-btn{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-btn span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.slider-btn span i{
+  font-size: 20px;
+  color: #000;
+}
 button.button span img {
   height: 10px;
 }
@@ -154,9 +178,14 @@ button.button:hover {
 .slider-n{font-size: 35px;font-weight: 700;color: #04173f;}
 .slider-content{color: #000000;position: relative;}
 .slider-content::before{position: absolute;content: "";width: 50px;height: 0.5px;background-color: #04173f;top: 40%;left: -70px}
-.mobile-slider-content{height:294px ; width: 398px;padding: 30px;gap: 30px;}
+.mobile-slider-content{height:325px ; width: 398px;padding: 20px;gap: 20px;}
 .service-section .slick-next:before{content: url(images/forward-arr.svg) !important;}
  .service-section .slick-prev:before{content: url(images/back-arr.svg) !important;}
+ .service-section .slick-slide.slick-current.slick-active.slick-center .mobile-slider-content{border-radius: 20px; box-shadow: 0px 8px 30px 0px #0000000F;
+  ;}
+  .service-section .slick-slide.slick-current.slick-active.slick-center .mobile-slider-content .slider-btn-container{
+    display: block;
+  }
 
 
 .about-section{background-color: #30b457;}

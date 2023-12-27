@@ -40,10 +40,10 @@ $('.mobile-slider').slick({
   arrows: true,
   dots: false,
   speed: 300,
-  centerPadding: '30px',
+  centerPadding: '10px',
   infinite: true,
   autoplaySpeed: 2000,
-  autoplay: true,
+  autoplay: false,
   pauseOnHover: true,
   responsive: [
       {
